@@ -20,5 +20,11 @@ namespace WPFSwimming
         {
             InitializeComponent();
         }
+
+        private void submitButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"Hello {firstNameText.Text}");
+            firstNameText.Text = "I changed...";
+        }
     }
 }
